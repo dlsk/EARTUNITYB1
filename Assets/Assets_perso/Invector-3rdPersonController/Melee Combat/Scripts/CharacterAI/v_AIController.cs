@@ -400,14 +400,14 @@ namespace Invector
             if (currentWaypoint >= waypoints.Count) currentWaypoint = 0;
             if (waypoints.Count == 0)
             {
-                agent.Stop();
+                //agent.Stop();
                 return null;
             }
             if (visitedWaypoint.Count == waypoints.Count) visitedWaypoint.Clear();
 
             if (visitedWaypoint.Contains(waypoints[currentWaypoint])) return null;
 
-            agent.Resume();
+            //agent.Resume();
             return waypoints[currentWaypoint];
         }
 
@@ -420,11 +420,11 @@ namespace Invector
             if (currentPatrolPoint >= subPoints.Count) currentPatrolPoint = 0;
             if (subPoints.Count == 0)
             {
-                agent.Stop();
+                //agent.Stop();
                 return null;
             }
             if (visitedPatrolPoint.Contains(subPoints[currentPatrolPoint])) return null;
-            agent.Resume();
+            //agent.Resume();
             return subPoints[currentPatrolPoint];
         }
 

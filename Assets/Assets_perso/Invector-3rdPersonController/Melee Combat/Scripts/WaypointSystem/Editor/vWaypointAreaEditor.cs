@@ -119,15 +119,15 @@ namespace Invector
                             Handles.color = node.isValid ? (currentNode.Equals(node) ? Color.green : Color.white) : Color.red;
 
                         if (!editMode)
-                            Handles.SphereCap(0, node.transform.position, Quaternion.identity, 0.25f);
-                        else if (Handles.Button(node.transform.position, Quaternion.identity, currentNode ? (currentNode == node ? .5f : 0.25f) : .25f, currentNode ? (currentNode == node ? .5f : 0.25f) : .25f, Handles.SphereCap))
+                            //Handles.SphereCap(0, node.transform.position, Quaternion.identity, 0.25f);
+                        /*else if (Handles.Button(node.transform.position, Quaternion.identity, currentNode ? (currentNode == node ? .5f : 0.25f) : .25f, currentNode ? (currentNode == node ? .5f : 0.25f) : .25f, Handles.SphereCap))
                         {
                             indexOfWaypoint = pathArea.waypoints.IndexOf(node);
                             currentNode = node;
                             indexOfPatrolPoint = 0;
                             Selection.activeGameObject = node.gameObject;
                             Repaint();
-                        }
+                        }*/
                         if (editMode)
                             Handles.color = new Color(0, 0, 1, .2f);
                         Handles.DrawLine(node0.transform.position, node.transform.position);
@@ -146,7 +146,7 @@ namespace Invector
                                     {
                                         Handles.DrawLine(patrolPoint0.transform.position, patrolPoint.position);
                                         patrolPoint0 = patrolPoint;
-                                        Handles.CubeCap(0, patrolPoint.transform.position, Quaternion.identity, 0.15f);
+                                        //Handles.CubeCap(0, patrolPoint.transform.position, Quaternion.identity, 0.15f);
                                     }
                                 }
                             }
@@ -187,12 +187,12 @@ namespace Invector
                         Handles.color = patrolPoint.isValid ? Color.cyan : Color.red;
                         if (patrolPoint != null)
                         {
-                            if (Handles.Button(patrolPoint.transform.position, Quaternion.Euler(0, 0, 0), .25f, .25f, Handles.CubeCap))
+                            /*if (Handles.Button(patrolPoint.transform.position, Quaternion.Euler(0, 0, 0), .25f, .25f, Handles.CubeCap))
                             {
                                 indexOfPatrolPoint = currentNode.subPoints.IndexOf(patrolPoint);
                                 Selection.activeGameObject = patrolPoint.gameObject;
                                 Repaint();
-                            }
+                            }*/
                             Handles.color = new Color(1, 1, 1, 0.1f);
                             Handles.Label(patrolPoint.position, new GUIContent("P-" + (index + 1).ToString("00")));
                         }

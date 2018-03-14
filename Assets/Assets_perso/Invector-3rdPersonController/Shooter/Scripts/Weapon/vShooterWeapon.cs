@@ -121,7 +121,7 @@ namespace Invector
         [Header("Effects")]
         public Light lightOnShot;
         [SerializeField]
-        public ParticleEmitter[] emittLegacyParticle;
+        //public ParticleEmitter[] emittLegacyParticle;
         public ParticleSystem[] emittShurykenParticle;
 
         [Header("Scope Options")]
@@ -185,7 +185,7 @@ namespace Invector
             precision = Mathf.Clamp(value, 0, 1);
         }
 
-        void StartEmitters()
+        /*void StartEmitters()
         {
             if (emittLegacyParticle != null)
             {
@@ -198,9 +198,9 @@ namespace Invector
                 foreach (ParticleSystem pe in emittShurykenParticle)
                     pe.Play();
             }
-        }
+        }*/
 
-        void StopEmitters()
+        /*void StopEmitters()
         {
             if (emittLegacyParticle != null)
             {
@@ -213,7 +213,7 @@ namespace Invector
                 foreach (ParticleSystem pe in emittShurykenParticle)
                     pe.Stop();
             }
-        }
+        }*/
 
         public virtual string weaponName
         {
@@ -375,7 +375,7 @@ namespace Invector
             }
             StartCoroutine("LightOnShoot", 0.037f);
 
-            StartEmitters();
+            //StartEmitters();
 
             if (projectileToHide != null)
                 projectileToHide.gameObject.SetActive(false);
