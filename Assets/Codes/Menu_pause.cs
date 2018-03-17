@@ -7,8 +7,10 @@ public class Menu_pause : MonoBehaviour
 {
     public GameObject panelPause;
     private bool isActive = false;
-    private bool index = false;
+    public string GameScene;
     public string MenuScene;
+    public GameObject destroyobj1;
+    public GameObject destroyobj2;
 
     void Update()
     {
@@ -21,32 +23,16 @@ public class Menu_pause : MonoBehaviour
         if (isActive == true)
         {
             panelPause.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
             Time.timeScale = 0;
-
-            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                ChoicesButton();
-            }
-
-            if (index == false)
-            {               
-                if (Input.GetKeyDown(KeyCode.P))
-                {
-                    ResumeButton();
-                }
-            }
-
-            if (index == true)
-            {
-                if (Input.GetKeyDown(KeyCode.P))
-                {
-                    OnclickMenu();
-                }
-            }
         }
+
         else
         {
             panelPause.SetActive(false);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             Time.timeScale = 1;
         }
     }
@@ -56,20 +42,17 @@ public class Menu_pause : MonoBehaviour
         isActive = !isActive;
     }
 
+    public void OnclickRestart()
+    {
+        SceneManager.LoadScene(GameScene);
+        Destroy(destroyobj1, 0.0f);
+        Destroy(destroyobj2, 0.0f);
+    }
+
     public void OnclickMenu()
     {
         SceneManager.LoadScene(MenuScene);
-
-    }
-
-    private void ChoicesButton()
-    {
-        index = !index;
-
-        if (index == false)
-            Debug.Log("Resume");
-
-        if (index == true)
-            Debug.Log("Menu");
+        Destroy(destroyobj1,0.0f);
+        Destroy(destroyobj2, 0.0f);
     }
 }
