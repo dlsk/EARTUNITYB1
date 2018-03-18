@@ -24,7 +24,7 @@ namespace Invector.CharacterController
         public GenericInput horizontalInput = new GenericInput("Horizontal", "LeftAnalogHorizontal", "Horizontal");
         public GenericInput verticallInput = new GenericInput("Vertical", "LeftAnalogVertical", "Vertical");
         public GenericInput jumpInput = new GenericInput("Space", "X", "X");
-        public GenericInput rollInput = new GenericInput("Q", "B", "B");
+        public GenericInput rollInput = new GenericInput("A", "B", "B");
         public GenericInput strafeInput = new GenericInput("Tab", "RightStickClick", "RightStickClick");
         public GenericInput sprintInput = new GenericInput("LeftShift", "LeftStickClick", "LeftStickClick");
         public GenericInput crouchInput = new GenericInput("C", "Y", "Y");

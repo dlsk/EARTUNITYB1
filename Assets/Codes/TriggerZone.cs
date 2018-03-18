@@ -4,19 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class TriggerZone : MonoBehaviour
 {
-    
     public float timeLeft = 2.0f;
     
-    void Start()
-    {
-
-    }
-    
-    void Update()
-    {
-
-    }
-
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
