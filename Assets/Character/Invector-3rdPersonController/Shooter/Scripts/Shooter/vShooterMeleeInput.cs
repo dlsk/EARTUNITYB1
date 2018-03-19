@@ -90,8 +90,8 @@ public class vShooterMeleeInput : vMeleeCombatInput
 
         headTrack = GetComponent<vHeadTrack>();
 
-        if (!controlAimCanvas)
-            Debug.LogWarning("Missing the AimCanvas, drag and drop the prefab to this scene in order to Aim", gameObject);
+        //if (!controlAimCanvas)
+            //Debug.LogWarning("Missing the AimCanvas, drag and drop the prefab to this scene in order to Aim", gameObject);
     }
 
     protected override void LateUpdate()
