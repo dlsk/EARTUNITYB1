@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class TriggerTimeFantome : MonoBehaviour {
 
     public float triggerTimer = 0.0f;
+    private bool onOrOff = true;
     public string GameScene;
     public GameObject destroyobj1;
     public GameObject destroyobj2;
@@ -26,9 +27,11 @@ public class TriggerTimeFantome : MonoBehaviour {
     {
         triggerTimer -= Time.deltaTime;
 
-        if (_registerFantomeTime >= triggerTimer)
+        if (_registerFantomeTime >= triggerTimer && onOrOff == true)
         {
             Apparition();
+            onOrOff = false;
+            Debug.Log("C'est print");
         }
 
         if (triggerTimer <= 0)
