@@ -858,7 +858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuScene: menu_principal
-  PlayScene: scene_lvl1
+  PlayScene: Slide_intro
   Option_controleScene: menu_optionControle
   Option_volumeScene: menu_optionVolume
   Option_creditsScene: menu_optionCredits

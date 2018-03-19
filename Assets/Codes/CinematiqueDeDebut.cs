@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CinematiqueDeDebut : MonoBehaviour
 {
@@ -50,7 +51,7 @@ public class CinematiqueDeDebut : MonoBehaviour
 
     IEnumerator TextWait()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.08f);
         _textId++;
         DisplayLetter();
     }
@@ -63,6 +64,11 @@ public class CinematiqueDeDebut : MonoBehaviour
             _textId = 0;
             ZoneDeTexte.text = "";           //Il faut laisser la dernière case du tableau _phraseId
             DisplayLetter();
+        }
+        if (_phraseId == MonTexte.Length)
+        {
+            Scene current = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(current.buildIndex + 1);
         }
     }
 }

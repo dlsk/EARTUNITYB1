@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 public class TriggerZone : MonoBehaviour
 {
     public float timeLeft = 2.0f;
-    
+    public GameObject destroyobj1;
+    public GameObject destroyobj2;
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -38,7 +40,10 @@ public class TriggerZone : MonoBehaviour
         timeLeft -= Time.deltaTime;
         if (timeLeft < 0.0f)
         {
-            SceneManager.LoadScene("scene_lvl2");
+            Scene current = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(current.buildIndex + 1);
+            Destroy(destroyobj1, 0.0f);
+            Destroy(destroyobj2, 0.0f);
         }
     }
 }

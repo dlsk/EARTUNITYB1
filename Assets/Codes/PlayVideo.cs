@@ -10,7 +10,7 @@ public class PlayVideo : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rawImageComp = GetComponent<RawImage>();
-
+        PlayClip();
 	}
 	void PlayClip()
     {
