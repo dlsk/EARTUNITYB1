@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 114338507581764978}
   - component: {fileID: 54711799694222238}
   m_Layer: 0
-  m_Name: TimeTakingTrigger 1
+  m_Name: TimeTakingTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
