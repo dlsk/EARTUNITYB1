@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
 
         if (targetTime <= 0.0f)
         {
-            Debug.Log("Fin");
+            //Debug.Log("Fin");
             PlayerSpawnPosition();
             targetTime = timeInScene;
         }

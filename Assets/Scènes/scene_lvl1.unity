@@ -534,7 +534,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &188265432 stripped
 Transform:
@@ -1653,7 +1653,7 @@ Transform:
   m_LocalScale: {x: 0.8924561, y: 2.0890222, z: 2.6586003}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &578568223 stripped
 GameObject:
@@ -2314,7 +2314,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.28
+      value: -1.38
       objectReference: {fileID: 0}
     - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2679,6 +2679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animPont: {fileID: 1153744084}
+  animBouton: {fileID: 0}
   animationPont: {fileID: 0}
   BoutonBoolen: {fileID: 25121805}
 --- !u!64 &1153744086
@@ -4840,6 +4841,91 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &1700044849
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795630803436296, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
+      propertyPath: m_Name
+      value: TimeTakingTrigger (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: destroyobj1
+      value: 
+      objectReference: {fileID: 1054843069}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: destroyobj2
+      value: 
+      objectReference: {fileID: 1404885204}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: PlayerCamera
+      value: 
+      objectReference: {fileID: 704645727}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: PlayerModel
+      value: 
+      objectReference: {fileID: 1054843069}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: nombreDeRobots
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: GameScene
+      value: scene_lvl1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: Fantome
+      value: 
+      objectReference: {fileID: 439314540}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1710379939
 GameObject:
   m_ObjectHideFlags: 0
@@ -4942,7 +5028,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 56ce88b098cb7144081728e1d0561c60, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 56ce88b098cb7144081728e1d0561c60, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -5100,7 +5186,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df22a8b1cf17fda4597174cf54fe8c8f, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df22a8b1cf17fda4597174cf54fe8c8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

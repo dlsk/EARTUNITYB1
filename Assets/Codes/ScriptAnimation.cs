@@ -7,6 +7,7 @@ public class ScriptAnimation : MonoBehaviour {
     private float targetTimeAnimationLaunch = 2.0f;
     private float currentTime = 0.0f;
     public GameObject animPont;
+    public GameObject animBouton;
     public Animator animationPont;
     public GameObject BoutonBoolen;
 

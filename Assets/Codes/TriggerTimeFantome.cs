@@ -13,15 +13,13 @@ public class TriggerTimeFantome : MonoBehaviour {
     private float _registerFantomeTime;
     private float _registered;
     private Vector3 fantomePosition;
+    private Quaternion fantomeRotation;
     public GameObject PlayerCamera;
     public GameObject Fantome;
     public GameObject PlayerModel;
-    //private Rigidbody _rigidbody;
 
     private void Start()
     {
-        //_rigidbody = GetComponent<Rigidbody>();
-        //Assert.IsNotNull(_rigidbody);
         triggerTimer = 2 * PlayerCamera.GetComponent<Timer>().timeInScene;
         //Debug.Log(triggerTimer);
     }
@@ -38,6 +36,7 @@ public class TriggerTimeFantome : MonoBehaviour {
 
         if (triggerTimer <= 0)
         {
+
             SceneManager.LoadScene(GameScene);
             Destroy(destroyobj1, 0.0f);
             Destroy(destroyobj2, 0.0f);
@@ -51,6 +50,7 @@ public class TriggerTimeFantome : MonoBehaviour {
             //Debug.Log("Ok c'est bon");
             _registerFantomeTime = PlayerCamera.GetComponent<Timer>().targetTime;
             fantomePosition = PlayerModel.transform.position;
+            fantomeRotation = PlayerModel.transform.rotation;
             testPositionTaken = !testPositionTaken;
             //Debug.Log(_registerFantomeTime);
         }
@@ -59,5 +59,6 @@ public class TriggerTimeFantome : MonoBehaviour {
     public void Apparition()
     {
         Fantome.transform.position = fantomePosition;
+        Fantome.transform.rotation = fantomeRotation;
     }
 }

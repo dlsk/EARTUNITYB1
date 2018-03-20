@@ -9,20 +9,14 @@ public class AnimationBouton : MonoBehaviour {
     public bool animationPassée = false;
 
 
-    private void Awake()
+    void Awake()
     {
         animationBouton = animBouton.GetComponent<Animator>();
     }
-
-    // Use this for initialization
+    
     void Start () {
         animationBouton.speed = 0.0f;
     }
-	
-	// Update is called once per frame
-	void Update () {
-
-	}
 
     public void AnimationBoutonPlay()
     {

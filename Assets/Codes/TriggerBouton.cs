@@ -16,7 +16,7 @@ public class TriggerBouton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        testTriggerBouton = false;
+        testTriggerBouton = true;
 	}
 	
 	// Update is called once per frame
@@ -26,21 +26,15 @@ public class TriggerBouton : MonoBehaviour {
             Apparition();
             onOrOff = !onOrOff;
         }
+    }
 
-        if (Input.GetKeyDown(KeyCode.E) && testTriggerBouton == true)
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && testTriggerBouton == true)
         {
             _registerFantomeTime = PlayerCamera.GetComponent<Timer>().targetTime;
             fantomePosition = PlayerModel.transform.position;
-            testTriggerBouton = !testTriggerBouton;
-            //Debug.Log(fantomePosition);
             BoutonAnim.GetComponent<AnimationBouton>().AnimationBoutonPlay();
-        }
-    }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
             testTriggerBouton = !testTriggerBouton;
         }
     }
