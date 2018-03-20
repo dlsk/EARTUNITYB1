@@ -13,7 +13,6 @@ public class TriggerTimeFantome : MonoBehaviour {
     private float _registerFantomeTime;
     private float _registered;
     private Vector3 fantomePosition;
-    private Quaternion fantomeRotation;
     public GameObject PlayerCamera;
     public GameObject Fantome;
     public GameObject PlayerModel;
@@ -50,7 +49,6 @@ public class TriggerTimeFantome : MonoBehaviour {
             //Debug.Log("Ok c'est bon");
             _registerFantomeTime = PlayerCamera.GetComponent<Timer>().targetTime;
             fantomePosition = PlayerModel.transform.position;
-            fantomeRotation = PlayerModel.transform.rotation;
             testPositionTaken = !testPositionTaken;
             //Debug.Log(_registerFantomeTime);
         }
@@ -59,6 +57,5 @@ public class TriggerTimeFantome : MonoBehaviour {
     public void Apparition()
     {
         Fantome.transform.position = fantomePosition;
-        Fantome.transform.rotation = fantomeRotation;
     }
 }
