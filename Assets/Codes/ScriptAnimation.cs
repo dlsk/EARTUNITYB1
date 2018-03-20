@@ -29,7 +29,6 @@ public class ScriptAnimation : MonoBehaviour {
 
             if (currentTime >= 1.5f)
             {
-                Debug.Log("Animation Pont Lancée");
                 animationPont.speed = 1.0f;
                 currentTime = targetTimeAnimationLaunch;
             }

@@ -6,6 +6,7 @@ public class TriggerTimeFantome : MonoBehaviour {
 
     private float triggerTimer;
     private bool onOrOff = true;
+    private bool testPositionTaken = true;
     public string GameScene;
     public GameObject destroyobj1;
     public GameObject destroyobj2;
@@ -33,7 +34,7 @@ public class TriggerTimeFantome : MonoBehaviour {
         {
             Apparition();
             onOrOff = false;
-            Debug.Log("C'est print");
+            Debug.Log("Trigger Fantome Working");
         }
 
         if (triggerTimer <= 0)
@@ -46,11 +47,12 @@ public class TriggerTimeFantome : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && testPositionTaken == true)
         {
             //Debug.Log("Ok c'est bon");
             _registerFantomeTime = PlayerCamera.GetComponent<Timer>().targetTime;
             fantomePosition = PlayerModel.transform.position;
+            testPositionTaken = !testPositionTaken;
             Debug.Log(_registerFantomeTime);
         }
     }

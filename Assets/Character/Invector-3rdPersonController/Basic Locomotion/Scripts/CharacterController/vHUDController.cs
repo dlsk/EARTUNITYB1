@@ -163,8 +163,8 @@ public class vHUDController : MonoBehaviour
             endColor.a = 0f;
             fadeText.color = endColor;
         }
-        else
-            Debug.Log("Please assign a Text object on the field Fade Text");
+        //else
+            //Debug.Log("Please assign a Text object on the field Fade Text");
     }
 	
 	void FadeEffect()
