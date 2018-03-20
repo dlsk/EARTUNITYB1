@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: "Assets/Sc\xE8nes/EcranTitre.unity"
+    guid: deff45a6f9d5e5b4fb5dd36404db69c1
+  - enabled: 1
     path: "Assets/Sc\xE8nes/menu_principal.unity"
     guid: 1727e9d90a427f44b8354fb5091a0362
   - enabled: 1
