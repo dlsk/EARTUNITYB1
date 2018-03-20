@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class TriggerTimeFantome : MonoBehaviour {
 
-    public float triggerTimer = 0.0f;
+    private float triggerTimer;
     private bool onOrOff = true;
     public string GameScene;
     public GameObject destroyobj1;
@@ -21,6 +21,8 @@ public class TriggerTimeFantome : MonoBehaviour {
     {
         //_rigidbody = GetComponent<Rigidbody>();
         //Assert.IsNotNull(_rigidbody);
+        triggerTimer = 2 * PlayerCamera.GetComponent<Timer>().timeInScene;
+        Debug.Log(triggerTimer);
     }
 
     private void Update()
@@ -36,7 +38,7 @@ public class TriggerTimeFantome : MonoBehaviour {
 
         if (triggerTimer <= 0)
         {
-            SceneManager.LoadScene("scene_lvl1");
+            SceneManager.LoadScene(GameScene);
             Destroy(destroyobj1, 0.0f);
             Destroy(destroyobj2, 0.0f);
         }
