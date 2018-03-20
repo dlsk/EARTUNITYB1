@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class TriggerTimeFantome : MonoBehaviour {
 
-    private float triggerTimer;
+    public float triggerTimer;
     private bool onOrOff = true;
     private bool testPositionTaken = true;
     public string GameScene;
@@ -23,7 +23,7 @@ public class TriggerTimeFantome : MonoBehaviour {
         //_rigidbody = GetComponent<Rigidbody>();
         //Assert.IsNotNull(_rigidbody);
         triggerTimer = 2 * PlayerCamera.GetComponent<Timer>().timeInScene;
-        Debug.Log(triggerTimer);
+        //Debug.Log(triggerTimer);
     }
 
     private void Update()
@@ -33,8 +33,7 @@ public class TriggerTimeFantome : MonoBehaviour {
         if (_registerFantomeTime >= triggerTimer && onOrOff == true)
         {
             Apparition();
-            onOrOff = false;
-            Debug.Log("Trigger Fantome Working");
+            onOrOff = !onOrOff;
         }
 
         if (triggerTimer <= 0)
@@ -53,7 +52,7 @@ public class TriggerTimeFantome : MonoBehaviour {
             _registerFantomeTime = PlayerCamera.GetComponent<Timer>().targetTime;
             fantomePosition = PlayerModel.transform.position;
             testPositionTaken = !testPositionTaken;
-            Debug.Log(_registerFantomeTime);
+            //Debug.Log(_registerFantomeTime);
         }
     }
 
