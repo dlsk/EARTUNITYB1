@@ -8,6 +8,7 @@ public class Menu_pause : MonoBehaviour
     public GameObject panelPause;
     public GameObject panelCommande;
     private bool isActive = false;
+    private bool commandeON = false;
     public string GameScene;
     public string MenuScene;
     public GameObject destroyobj1;
@@ -36,6 +37,16 @@ public class Menu_pause : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Time.timeScale = 1;
         }
+
+        //commande
+        if (commandeON == true)
+        {
+            panelCommande.SetActive(true);
+        }
+        else
+        {
+            panelCommande.SetActive(false);
+        }
     }
 
     public void ResumeButton()
@@ -59,11 +70,11 @@ public class Menu_pause : MonoBehaviour
 
     public void ManetteOn()
     {
-        panelCommande.SetActive(true);
+        commandeON = true;
     }
 
     public void ManetteOff()
     {
-        panelCommande.SetActive(false);
+        commandeON = false;
     }
 }
