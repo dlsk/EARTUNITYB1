@@ -14,6 +14,7 @@ public class TriggerZone : MonoBehaviour
         {
             Debug.Log("Oui c'est dedans");
             CameraShaker.Instance.ShakeOnce(15f, 15f, 5f, 5f);
+            VoiceActivation.Instance.MakePortalSound();
         }
     }
 
@@ -23,6 +24,7 @@ public class TriggerZone : MonoBehaviour
         {
             Debug.Log("Toujours");
             timeAfterTrigger();
+            VoiceActivation.Instance.MakePortalSound();
         }
     }
 

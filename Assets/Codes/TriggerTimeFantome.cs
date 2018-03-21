@@ -7,6 +7,7 @@ public class TriggerTimeFantome : MonoBehaviour {
     public float triggerTimer;
     private bool onOrOff = true;
     private bool testPositionTaken = true;
+    public bool Restart = false;
     public string GameScene;
     public GameObject destroyobj1;
     public GameObject destroyobj2;
@@ -35,7 +36,7 @@ public class TriggerTimeFantome : MonoBehaviour {
 
         if (triggerTimer <= 0)
         {
-
+            Restart = !Restart;
             SceneManager.LoadScene(GameScene);
             Destroy(destroyobj1, 0.0f);
             Destroy(destroyobj2, 0.0f);

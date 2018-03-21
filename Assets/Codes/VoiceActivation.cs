@@ -12,9 +12,12 @@ public class VoiceActivation : MonoBehaviour
     /// </summary>
     public static VoiceActivation Instance;
 
+    public AudioClip SonPont;
+    public AudioClip SonBouton;
     public AudioClip Un;
     public AudioClip Deux;
     public AudioClip Trois;
+    public AudioClip PortalSound;
 
     void Awake()
     {
@@ -25,12 +28,17 @@ public class VoiceActivation : MonoBehaviour
         Instance = this;
     }
 
+    public void MakeSonPont()
+    {
+        MakeSound(SonPont);
+    }
+
     public void MakeSoundUn()
     {
         MakeSound(Un);
     }
 
-    public void MakeSoundDeux()
+    public void MakeSoundDex()
     {
         MakeSound(Deux);
     }
@@ -38,6 +46,11 @@ public class VoiceActivation : MonoBehaviour
     public void MakeSoundTrois()
     {
         MakeSound(Trois);
+    }
+
+    public void MakePortalSound()
+    {
+        MakeSound(PortalSound);
     }
 
     /// <summary>
