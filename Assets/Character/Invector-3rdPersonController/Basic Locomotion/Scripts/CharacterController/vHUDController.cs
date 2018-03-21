@@ -150,8 +150,8 @@ public class vHUDController : MonoBehaviour
 		#else
 		if(controllerInput)		
 			displayControls.sprite = joystickControls;		
-		else		
-			displayControls.sprite = keyboardControls;
+		//else		
+			//displayControls.sprite = keyboardControls;
 		#endif
 	}
     

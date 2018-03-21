@@ -36,6 +36,7 @@ public class TriggerBouton : MonoBehaviour {
             fantomePosition = PlayerModel.transform.position;
             BoutonAnim.GetComponent<AnimationBouton>().AnimationBoutonPlay();
             testTriggerBouton = !testTriggerBouton;
+            VoiceActivation.Instance.MakeSoundTrois();
         }
     }
 
