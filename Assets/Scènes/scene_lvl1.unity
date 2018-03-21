@@ -1819,6 +1819,21 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 82431971386219090, guid: a5c1a2e4ddce5354192a8102b05609f0,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82431971386219090, guid: a5c1a2e4ddce5354192a8102b05609f0,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82431971386219090, guid: a5c1a2e4ddce5354192a8102b05609f0,
+        type: 2}
+      propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5c1a2e4ddce5354192a8102b05609f0, type: 2}
   m_IsPrefabParent: 0
