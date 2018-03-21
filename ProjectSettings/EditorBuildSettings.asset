@@ -12,15 +12,6 @@ EditorBuildSettings:
     path: "Assets/Sc\xE8nes/menu_principal.unity"
     guid: 1727e9d90a427f44b8354fb5091a0362
   - enabled: 1
-    path: "Assets/Sc\xE8nes/menu_optionControle.unity"
-    guid: 8cde3cfd175c00d4e96c89b4538b411d
-  - enabled: 1
-    path: "Assets/Sc\xE8nes/menu_optionVolume.unity"
-    guid: 232f3bf69e6e4a142a0bd7f2e61bb0c0
-  - enabled: 1
-    path: "Assets/Sc\xE8nes/menu_optionCredits.unity"
-    guid: 3e91958e5bf3e894d829ff63421d8dfa
-  - enabled: 1
     path: "Assets/Sc\xE8nes/Slide_intro.unity"
     guid: 5e11780cda3751341b8450e924387049
   - enabled: 1
@@ -53,3 +44,12 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Sc\xE8nes/Fin(acte1).unity"
     guid: dcc2d0c5e152d9b4da5de2b8d8868f36
+  - enabled: 1
+    path: "Assets/Sc\xE8nes/menu_optionControle.unity"
+    guid: 8cde3cfd175c00d4e96c89b4538b411d
+  - enabled: 1
+    path: "Assets/Sc\xE8nes/menu_optionVolume.unity"
+    guid: 232f3bf69e6e4a142a0bd7f2e61bb0c0
+  - enabled: 1
+    path: "Assets/Sc\xE8nes/menu_optionCredits.unity"
+    guid: 3e91958e5bf3e894d829ff63421d8dfa
