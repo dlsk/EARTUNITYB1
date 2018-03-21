@@ -59,13 +59,15 @@ public class CinematiqueDeDebut : MonoBehaviour
     private void NextPhrase()
     {
         _phraseId++;
+
         if (_phraseId <= MonTexte.Length - 1)
         {
             _textId = 0;
             ZoneDeTexte.text = "";           //Il faut laisser la dernière case du tableau _phraseId
             DisplayLetter();
         }
-        if (_phraseId == MonTexte.Length)
+
+        else if (_phraseId == MonTexte.Length)
         {
             Scene current = SceneManager.GetActiveScene();
             SceneManager.LoadScene(current.buildIndex + 1);

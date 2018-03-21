@@ -199,6 +199,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 553837560}
+  - {fileID: 1501846389}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -240,7 +241,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1017, y: 572}
+  m_SizeDelta: {x: 981, y: 552}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &553837561
 MonoBehaviour:
@@ -370,9 +371,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MonTexte:
-  - 
-  - 
-  - 
+  - You're going ahead at a good pace, but you don't have enough informations yet
+    to identify the problem. According to your Commander, you need to go further inside
+    the machine, straight to the source of the infection.
+  - To be continue ...
   ZoneDeTexte: {fileID: 1501846387}
 --- !u!114 &1501846387
 MonoBehaviour:
@@ -423,12 +425,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 442859171}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 503, y: 301.1}
+  m_AnchoredPosition: {x: 12.5, y: 25.100037}
   m_SizeDelta: {x: 501.7, y: 198.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1613372315
@@ -572,5 +574,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
