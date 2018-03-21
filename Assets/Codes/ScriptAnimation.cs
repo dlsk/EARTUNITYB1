@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScriptAnimation : MonoBehaviour {
 
-    private float targetTimeAnimationLaunch = 2.0f;
+    private float timeAnimationAtLaunch = 0.0f;
     private float currentTime = 0.0f;
     private bool soundOn = false;
     public GameObject animPont;
@@ -29,11 +29,12 @@ public class ScriptAnimation : MonoBehaviour {
         {
             currentTime += Time.deltaTime;
 
-            if (currentTime >= 1.5f)
+            if (currentTime >= 1.1f)
             {
                 soundOn = !soundOn;
                 animationPont.speed = 1.0f;
-                currentTime = targetTimeAnimationLaunch;
+                animBouton.GetComponent<AnimationBouton>().animationBouton.speed = 0.0f;
+                currentTime = timeAnimationAtLaunch;
             }
         }
 
