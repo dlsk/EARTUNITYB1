@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Menu_pause : MonoBehaviour
 {
     public GameObject panelPause;
+    public GameObject panelCommande;
     private bool isActive = false;
     public string GameScene;
     public string MenuScene;
@@ -54,5 +55,15 @@ public class Menu_pause : MonoBehaviour
         SceneManager.LoadScene(MenuScene);
         Destroy(destroyobj1,0.0f);
         Destroy(destroyobj2, 0.0f);
+    }
+
+    public void ManetteOn()
+    {
+        panelCommande.SetActive(true);
+    }
+
+    public void ManetteOff()
+    {
+        panelCommande.SetActive(false);
     }
 }
