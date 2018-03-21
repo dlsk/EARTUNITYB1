@@ -246,7 +246,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
         type: 2}
@@ -292,6 +292,16 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: destroyPlayer
+      value: 
+      objectReference: {fileID: 1054843069}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: destroyController
+      value: 
+      objectReference: {fileID: 1404885204}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
   m_IsPrefabParent: 0
@@ -1536,7 +1546,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4092602245789156, guid: 5e59977be597ffb44855e48fb15dbad5, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4092602245789156, guid: 5e59977be597ffb44855e48fb15dbad5, type: 2}
       propertyPath: m_LocalScale.y
@@ -1725,7 +1735,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4592068720748150, guid: a5c1a2e4ddce5354192a8102b05609f0, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1821312383519070, guid: a5c1a2e4ddce5354192a8102b05609f0, type: 2}
       propertyPath: m_Name
@@ -1757,6 +1767,36 @@ Prefab:
         type: 2}
       propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114508405518012480, guid: a5c1a2e4ddce5354192a8102b05609f0,
+        type: 2}
+      propertyPath: selectedToolbar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114081693492008606, guid: a5c1a2e4ddce5354192a8102b05609f0,
+        type: 2}
+      propertyPath: openCloseWindow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114081693492008606, guid: a5c1a2e4ddce5354192a8102b05609f0,
+        type: 2}
+      propertyPath: rollInput.joystick
+      value: Horizontal
+      objectReference: {fileID: 0}
+    - target: {fileID: 114081693492008606, guid: a5c1a2e4ddce5354192a8102b05609f0,
+        type: 2}
+      propertyPath: horizontalInput.joystick
+      value: Horizontal
+      objectReference: {fileID: 0}
+    - target: {fileID: 114081693492008606, guid: a5c1a2e4ddce5354192a8102b05609f0,
+        type: 2}
+      propertyPath: verticallInput.joystick
+      value: Horizontal
+      objectReference: {fileID: 0}
+    - target: {fileID: 114081693492008606, guid: a5c1a2e4ddce5354192a8102b05609f0,
+        type: 2}
+      propertyPath: rollInput.keyboard
+      value: A
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5c1a2e4ddce5354192a8102b05609f0, type: 2}
@@ -1820,7 +1860,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4567633599610430, guid: a743a50cb507dea42afabbece0d69ef8, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114614944065834090, guid: a743a50cb507dea42afabbece0d69ef8,
         type: 2}
@@ -1857,6 +1897,16 @@ Prefab:
       propertyPath: TargetPlayerCameraRotationOnRestart
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114613828193252314, guid: a743a50cb507dea42afabbece0d69ef8,
+        type: 2}
+      propertyPath: destroyPont
+      value: 
+      objectReference: {fileID: 1153744084}
+    - target: {fileID: 114613828193252314, guid: a743a50cb507dea42afabbece0d69ef8,
+        type: 2}
+      propertyPath: destroyBouton
+      value: 
+      objectReference: {fileID: 25121805}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a743a50cb507dea42afabbece0d69ef8, type: 2}
   m_IsPrefabParent: 0
@@ -2020,7 +2070,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1795630803436296, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
       propertyPath: m_Name
@@ -2061,6 +2111,16 @@ Prefab:
       propertyPath: Fantome
       value: 
       objectReference: {fileID: 439314540}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: destroyController
+      value: 
+      objectReference: {fileID: 1404885204}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: destroyPlayer
+      value: 
+      objectReference: {fileID: 1054843069}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
   m_IsPrefabParent: 0
@@ -2158,6 +2218,11 @@ Prefab:
       propertyPath: BoutonAnim
       value: 
       objectReference: {fileID: 25121805}
+    - target: {fileID: 114560266832452286, guid: 6a768fafd405a7645b0963542876a958,
+        type: 2}
+      propertyPath: Pont
+      value: 
+      objectReference: {fileID: 1153744084}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6a768fafd405a7645b0963542876a958, type: 2}
   m_IsPrefabParent: 0
@@ -2335,7 +2400,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1795630803436296, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
       propertyPath: m_Name
@@ -2380,6 +2445,16 @@ Prefab:
       propertyPath: Fantome
       value: 
       objectReference: {fileID: 439314540}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: destroyPlayer
+      value: 
+      objectReference: {fileID: 1054843069}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: destroyController
+      value: 
+      objectReference: {fileID: 1404885204}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
   m_IsPrefabParent: 0
@@ -2495,6 +2570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelPause: {fileID: 1395735459}
+  panelCommande: {fileID: 575378093}
   GameScene: scene_lvl1
   MenuScene: menu_principal
   destroyobj1: {fileID: 1054843069}
@@ -2568,7 +2644,7 @@ RectTransform:
   m_Children:
   - {fileID: 1250009163}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2686,8 +2762,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e521144e67990d42a21456e8a0608bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeAnimationAtLaunch: 0
+  currentTime: 0
   animPont: {fileID: 1153744084}
-  animBouton: {fileID: 0}
+  animBouton: {fileID: 25121805}
   animationPont: {fileID: 0}
   BoutonBoolen: {fileID: 25121805}
 --- !u!64 &1153744086
@@ -4634,7 +4712,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4293649851804280, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1795630803436296, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
       propertyPath: m_Name
@@ -4679,6 +4757,16 @@ Prefab:
       propertyPath: Fantome
       value: 
       objectReference: {fileID: 439314540}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: destroyPlayer
+      value: 
+      objectReference: {fileID: 1054843069}
+    - target: {fileID: 114338507581764978, guid: c429bf50772434b4abb1d27abf45d480,
+        type: 2}
+      propertyPath: destroyController
+      value: 
+      objectReference: {fileID: 1404885204}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c429bf50772434b4abb1d27abf45d480, type: 2}
   m_IsPrefabParent: 0
@@ -5284,8 +5372,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SonPont: {fileID: 8300000, guid: 0341771bbff849f46b74ab28772570ac, type: 3}
   SonBouton: {fileID: 0}
-  Un: {fileID: 8300000, guid: e3dfccd18587d974e865000df1e67179, type: 3}
-  Deux: {fileID: 0}
   Trois: {fileID: 8300000, guid: d2f7472f024699d41a0f3f6d82e25acc, type: 3}
   PortalSound: {fileID: 8300000, guid: 700b7a68d627a40469e2f914d4e483d1, type: 3}
 --- !u!4 &2018272717

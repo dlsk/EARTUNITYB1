@@ -6,7 +6,7 @@ public class Sound1 : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        VoiceActivation.Instance.MakeSoundUn();
+        //VoiceActivation.Instance.MakeSoundUn();
     }
 	
 	// Update is called once per frame

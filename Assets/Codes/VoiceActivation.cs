@@ -14,8 +14,6 @@ public class VoiceActivation : MonoBehaviour
 
     public AudioClip SonPont;
     public AudioClip SonBouton;
-    public AudioClip Un;
-    public AudioClip Deux;
     public AudioClip Trois;
     public AudioClip PortalSound;
 
@@ -31,16 +29,6 @@ public class VoiceActivation : MonoBehaviour
     public void MakeSonPont()
     {
         MakeSound(SonPont);
-    }
-
-    public void MakeSoundUn()
-    {
-        MakeSound(Un);
-    }
-
-    public void MakeSoundDex()
-    {
-        MakeSound(Deux);
     }
 
     public void MakeSoundTrois()

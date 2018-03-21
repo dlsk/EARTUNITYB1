@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TriggerBouton : MonoBehaviour {
-
-    public GameObject BoutonAnim;
+    
     public GameObject PlayerCamera;
     public GameObject PlayerModel;
     public GameObject Fantome;
     public GameObject TriggerFantome;
-    private float _registerFantomeTime;
+    public GameObject BoutonAnim;
+    private float _registerFantomeTimeBouton;
+    private float currentTime;
     private Vector3 fantomePosition;
     private bool testTriggerBouton;
     private bool onOrOff = true;
@@ -21,7 +22,7 @@ public class TriggerBouton : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (_registerFantomeTime >= TriggerFantome.GetComponent<TriggerTimeFantome>().triggerTimer && onOrOff == true)
+        if (_registerFantomeTimeBouton >= TriggerFantome.GetComponent<TriggerTimeFantome>().triggerTimer && onOrOff == true)
         {
             Apparition();
             onOrOff = !onOrOff;
@@ -32,10 +33,11 @@ public class TriggerBouton : MonoBehaviour {
     {
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && testTriggerBouton == true)
         {
-            _registerFantomeTime = PlayerCamera.GetComponent<Timer>().targetTime;
+            _registerFantomeTimeBouton = PlayerCamera.GetComponent<Timer>().targetTime;
             fantomePosition = PlayerModel.transform.position;
             BoutonAnim.GetComponent<AnimationBouton>().AnimationBoutonPlay();
             testTriggerBouton = !testTriggerBouton;
+            //Pont.GetComponent<ScriptAnimation>().currentTime = Pont.GetComponent<ScriptAnimation>().timeAnimationAtLaunch;
             VoiceActivation.Instance.MakeSoundTrois();
         }
     }

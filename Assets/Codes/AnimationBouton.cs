@@ -7,6 +7,7 @@ public class AnimationBouton : MonoBehaviour {
     public GameObject animBouton;
     public Animator animationBouton;
     public bool animationPassée = false;
+    public static AnimationBouton Instance;
 
 
     void Awake()

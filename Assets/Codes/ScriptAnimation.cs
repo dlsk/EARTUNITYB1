@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ScriptAnimation : MonoBehaviour {
 
-    private float timeAnimationAtLaunch = 0.0f;
-    private float currentTime = 0.0f;
+    public float timeAnimationAtLaunch = 0.0f;
+    public float currentTime = 0.0f;
     private bool soundOn = false;
     public GameObject animPont;
     public GameObject animBouton;
@@ -16,25 +16,23 @@ public class ScriptAnimation : MonoBehaviour {
     {
         animationPont = animPont.GetComponent<Animator>();
     }
-
-    // Use this for initialization
+    
     void Start () {
         animationPont.speed = 0.0f;
     }
 	
-	// Update is called once per frame
 	void Update () {
 
         if (BoutonBoolen.GetComponent<AnimationBouton>().animationPassée == true)
         {
             currentTime += Time.deltaTime;
 
-            if (currentTime >= 1.1f)
+            if (currentTime >= 0.7f)
             {
                 soundOn = !soundOn;
                 animationPont.speed = 1.0f;
                 animBouton.GetComponent<AnimationBouton>().animationBouton.speed = 0.0f;
-                currentTime = timeAnimationAtLaunch;
+                //currentTime = timeAnimationAtLaunch;
             }
         }
 

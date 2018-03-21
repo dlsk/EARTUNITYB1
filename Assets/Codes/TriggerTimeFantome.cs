@@ -9,8 +9,8 @@ public class TriggerTimeFantome : MonoBehaviour {
     private bool testPositionTaken = true;
     public bool Restart = false;
     public string GameScene;
-    public GameObject destroyobj1;
-    public GameObject destroyobj2;
+    public GameObject destroyPlayer;
+    public GameObject destroyController;
     private float _registerFantomeTime;
     private float _registered;
     private Vector3 fantomePosition;
@@ -38,8 +38,8 @@ public class TriggerTimeFantome : MonoBehaviour {
         {
             Restart = !Restart;
             SceneManager.LoadScene(GameScene);
-            Destroy(destroyobj1, 0.0f);
-            Destroy(destroyobj2, 0.0f);
+            Destroy(destroyPlayer, 0.0f);
+            Destroy(destroyController, 0.0f);
         }
     }
 
