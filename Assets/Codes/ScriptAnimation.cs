@@ -6,6 +6,7 @@ public class ScriptAnimation : MonoBehaviour {
 
     public float timeAnimationAtLaunch = 0.0f;
     public float currentTime = 0.0f;
+    public float animationTime = 0.7f;
     private bool soundOn = false;
     private bool timerOn = true;
     public GameObject animPont;
@@ -31,18 +32,17 @@ public class ScriptAnimation : MonoBehaviour {
                 currentTime += Time.deltaTime;
             }
 
-            if (currentTime >= 0.7f)
+            if (currentTime >= animationTime)
             {
                 animationPont.speed = 1.0f;
                 animBouton.GetComponent<AnimationBouton>().animationBouton.speed = 0.0f;
             }
 
-            if (currentTime >= 0.7f)
+            if (currentTime >= animationTime)
             {
                 VoiceActivation.Instance.MakeSonPont();
                 soundOn = !soundOn;
                 timerOn = !timerOn;
-                currentTime = timeAnimationAtLaunch;
             }
         }
 

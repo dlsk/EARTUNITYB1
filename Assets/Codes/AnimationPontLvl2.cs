@@ -33,13 +33,13 @@ public class AnimationPontLvl2 : MonoBehaviour {
                 currentTime += Time.deltaTime;
             }
 
-            if (currentTime >= 0.7f)
+            if (currentTime >= 20.0f)
             {
                 animationPont.speed = 1.0f;
                 //animBouton.GetComponent<AnimationBouton>().animationBouton.speed = 0.0f;
             }
 
-            if (currentTime >= 0.7f)
+            if (currentTime >= 20.0f)
             {
                 soundOn = !soundOn;
                 timerOn = !timerOn;

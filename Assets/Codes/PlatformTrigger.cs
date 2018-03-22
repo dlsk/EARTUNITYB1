@@ -6,22 +6,21 @@ public class PlatformTrigger : MonoBehaviour {
 
     public GameObject MurInvisible;
     public GameObject PlayerModel;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject MurPositionInitial;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             MurInvisible.transform.position = PlayerModel.transform.position;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            MurInvisible.transform.position = MurPositionInitial.transform.position;
         }
     }
 }
