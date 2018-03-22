@@ -19,6 +19,7 @@ public class Menu_pause : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             ResumeButton();
+            ManetteOff();
         }
 
         //menu affiché
