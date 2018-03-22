@@ -27,6 +27,6 @@ public class Timer : MonoBehaviour
 
     protected void OnGUI()
     {
-        GUI.Box(new Rect(10, 40, 40, 20), targetTime.ToString("0"));
+        GUI.Box(new Rect(10, 60, 60, 20), targetTime.ToString("0"));
     }
 }
