@@ -33,6 +33,7 @@ public class TriggerBouton : MonoBehaviour {
     {
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && testTriggerBouton == true)
         {
+            Debug.Log("Appuis");
             _registerFantomeTimeBouton = PlayerCamera.GetComponent<Timer>().targetTime;
             fantomePosition = PlayerModel.transform.position;
             BoutonAnim.GetComponent<AnimationBouton>().AnimationBoutonPlay();

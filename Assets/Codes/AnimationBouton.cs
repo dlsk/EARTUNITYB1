@@ -21,7 +21,7 @@ public class AnimationBouton : MonoBehaviour {
 
     public void AnimationBoutonPlay()
     {
-        animationBouton.speed = 1.0f;
+        animationBouton.speed = 2.0f;
         animationPassée = !animationPassée;
     }
 }

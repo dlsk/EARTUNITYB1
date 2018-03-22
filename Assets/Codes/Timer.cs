@@ -6,8 +6,6 @@ public class Timer : MonoBehaviour
     public float timeInScene = 10.0f;
     public GameObject PlayerObject;
     public GameObject TargetSpawnRestartAfterTimeout;
-    public GameObject destroyPont;
-    public GameObject destroyBouton;
 
     void Update ()
     {
