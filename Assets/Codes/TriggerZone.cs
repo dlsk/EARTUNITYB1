@@ -22,7 +22,7 @@ public class TriggerZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Toujours");
+            //Debug.Log("Toujours");
             timeAfterTrigger();
         }
     }
@@ -32,7 +32,7 @@ public class TriggerZone : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             //SceneManager.LoadScene("Cours Script");
-            Debug.Log("C'est bien dehors");
+            //Debug.Log("C'est bien dehors");
         }
     }
 
