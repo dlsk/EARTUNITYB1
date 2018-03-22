@@ -37,9 +37,9 @@ public class TriggerBouton : MonoBehaviour {
             _registerFantomeTimeBouton = PlayerCamera.GetComponent<Timer>().targetTime;
             fantomePosition = PlayerModel.transform.position;
             BoutonAnim.GetComponent<AnimationBouton>().AnimationBoutonPlay();
+            BoutonAnim.GetComponent<VoixActivationPont>().voixOn = true;
             testTriggerBouton = !testTriggerBouton;
             //Pont.GetComponent<ScriptAnimation>().currentTime = Pont.GetComponent<ScriptAnimation>().timeAnimationAtLaunch;
-            VoiceActivation.Instance.MakeSoundTrois();
         }
     }
 
