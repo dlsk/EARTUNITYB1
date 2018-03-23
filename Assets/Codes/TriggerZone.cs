@@ -12,9 +12,9 @@ public class TriggerZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            VoiceActivation.Instance.MakePortalSound();
+            //VoiceActivation.Instance.MakePortalSound();
             //Debug.Log("Oui c'est dedans");
-            CameraShaker.Instance.ShakeOnce(15f, 15f, 5f, 5f);
+            CameraShaker.Instance.ShakeOnce(15.0f, 15.0f, 4.0f, 4.0f);
         }
     }
 
